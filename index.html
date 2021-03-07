@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamer - Bot</title>
+  <link rel="stylesheet" href="./style.css">
+  	<link rel="icon" sizes="32x32" type="image/png" href="./photos/gamerbot.png?size=512">
+		<link rel="icon" sizes="16x16" type="image/png" href="./photos/gamerbot.png?size=512">
+		<link rel="icon" href="./photos/gamerbot.png">
+    <script src="script.js"></script>
+
+    <style>
+canvas {
+    border:1px solid #d3d3d3;
+    background-color: #f1f1f1;
+}
+</style>
+
+</head>
+<body onload="startGame()">
+
+<bgsound src="./music/Filling.mp3" loop=1>
+
+<center>
+  <h2><s1>Gamer</s1></h2>
+  </center>
+
+  <center>
+    <img src="./photos/gamerbot.png" alt="Gamer - Bot" width="300" height="300" title="Gamer - Bot">
+  </center>
+
+<center>
+    <h2><s1>Bot</s1></h2>
+</center>
+
+
+
+
+
+
+
+
+
+<h2></h2>
+
+<!-- Trigger/Open The Modal -->
+
+<center>
+<button id="myBtn" class="button"><span>Link's</span></button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ <a href="./commands.html"><button class="button"><span>Command's</span></button></a>
+</center>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Gamer - Bot Link's</h2>
+    </div>
+    <div class="modal-body">
+
+      <p>Click on buttons to get what you need</p>
+
+
+        <a target="_blanck" href="https://discord.com/api/oauth2/authorize?client_id=802580998973685780&permissions=8&scope=bot"><button class="button"><span>Invite</span></button></a>
+
+ <a target="_blanck" href="https://discord.gg/8tJ8mFgSvV"><button class="button"><span>Support</span></button></a>
+
+
+  <a href="./commands.html"><button class="button"><span>Commands</span></button></a>
+
+
+  <a target="_blanck" href="https://top.gg/bot/802580998973685780"><botton class="button"><span>Top.gg</span></button></a>
+
+
+    </div>
+    <div class="modal-footer">
+      <h3>Thanks for choose Gamer - Bot</h3>
+    </div>
+  </div>
+
+</div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+
+
+<iframe src="https://discord.com/widget?id=765466375203717120&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <audio id="mySong">
+      <source src="./music/Isabellas-Lullaby.mp3" type="audio/mp3">
+   </audio>
+
+<h1>Click here to play music</h1>
+   <label class="switch">
+    <input type="checkbox">
+    <span id="icon" class="slider round"></span>
+  </label>
+  
+
+  <script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon")
+
+    icon.onclick = function(){
+        if(mySong.paused){
+            mySong.play();
+            icon.src = "";
+        }else{
+            mySong.pause();
+            icon.src = "";
+        }
+    }
+</script>
+
+
+
+
+
+
+</body>
+</html>
